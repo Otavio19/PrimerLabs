@@ -1,0 +1,361 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body
+{
+    background-color: #F7F7F7;
+    min-width: 1200px;
+}
+
+main
+{
+    height: 90vh;
+    background: rgb(126,217,87);
+    background: linear-gradient(261deg, rgba(126,217,87,1) 19%, rgba(0,151,178,1) 75%);
+    padding: 0 10%;
+    position: relative;
+}
+
+main header img
+{
+    width: 10rem;
+}
+
+.main_content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textMain
+{
+    width: 50%;
+    color: #fff;
+}
+
+.subtitle
+{
+    font-family: "Bitter", serif;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+}
+
+.textMain h2
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.4rem;
+    line-height: 3rem;
+    margin: 1rem 0;
+}
+
+.descMain
+{
+    max-width: 30rem;
+}
+
+.textMain a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.textMain a:hover
+{
+    background-color: #DBDC30;
+    color: #fff;
+}
+
+.imgMain
+{
+    width: 30rem;
+    top: 10rem;
+    position: relative;
+}
+
+.imgMain img
+{
+    width: 100%;
+}
+
+
+#about
+{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.container
+{
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleAbout
+{
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: center;
+    color: #DBDC30;
+}
+
+.titleAbout img
+{
+    width: 5rem;
+}
+
+.descAbout
+{
+    width: 60%;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.descAbout span
+{
+    color: #DBDC30;
+}
+
+.cardsAbout
+{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cardAbout
+{
+    width: 25%;
+    border: 1px solid #F7F7F7;
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.cardAbout h3
+{
+    font-size: 2rem;
+}
+
+.cardAbout p
+{
+    margin: 1rem 2rem;
+}
+
+.cardAbout img
+{
+    width: 5rem;
+}
+
+#works
+{
+    height: 60vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.listWorks
+{
+    width: 40%;
+}
+
+.listWorks h2
+{
+    font-size: 2.5rem;
+    color: #DBDC30;
+}
+
+
+.listWorks li
+{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    display: flex;
+    cursor: default;
+    width: 60%;
+    padding-left: 2rem;
+}
+
+.listWorks li:hover
+{
+    background-color: #DBDC30;
+    border-radius: 0 5rem 5rem 0rem;
+}
+
+.listWorks li h2
+{
+    display: inline-block;
+    font-size: 2.5rem;
+    margin-right: 1rem;
+    color: #000;
+}
+
+.descWorks
+{
+    width: 40%;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.descWorks img
+{
+    width: 20%;
+}
+
+#services
+{
+    height: 70vh;
+}
+
+.containerServices
+{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.containerServices h2
+{
+    font-size: 2rem;
+    color: #DBDC30;
+}
+
+.cardsSerivces
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.card
+{
+    width: 27%;
+    height: 15rem;
+    padding: 1rem 2rem;
+    background-color: #DBDC30;
+}
+
+.card img
+{
+    width: 7rem;
+}
+
+.contactMe
+{
+    background: rgb(126,217,87);
+    background: linear-gradient(261deg, rgba(126,217,87,1) 19%, rgba(0,151,178,1) 75%);
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -7rem;
+    margin: auto;
+}
+
+.textContact
+{
+    display: flex;
+    align-items: center;
+}
+
+.textContact img 
+{
+    width: 5rem;
+}
+
+.textContact h2
+{
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    color: #fff;
+}
+
+.contactMe a
+{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    background-color: #DBDC30;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+footer
+{
+    background-color: #2A2929;
+    height: 40vh;
+}
+
+.footerInfo
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+
+.footerInfo h3
+{
+    font-size: 2.3rem;
+}
+
+.footerInfo ul
+{
+    font-size: 1.1rem;
+    list-style: none;
+}
+
+.footerInfo ul li
+{
+    line-height: 2rem;
+}
+
+.footerInfo img
+{
+    width: 20rem;
+}
+
+/* @media screen and (min-width: 1200px){
+    .main_content, header
+    {
+        width: 70%;
+        margin: auto;
+    }
+} */

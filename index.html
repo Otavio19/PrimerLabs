@@ -9,10 +9,27 @@
     <!-- FONTS -->
 </head>
 <body>
+    <header>
+        <img src="assets/img/Logo_Primer_Letras.png" alt="">
+        <ul>
+            <li>
+                <a href="#">Inicio</a>
+            </li>
+            <li>
+                <a href="#about">Quem Somos</a>
+            </li>
+            <li>
+                <a href="#works">Como Funciona</a>
+            </li>
+            <li>
+                <a href="#services">Serviços</a>
+            </li>
+            <li>
+                <a href="#contact">Contato</a>
+            </li>
+        </ul>
+    </header>
     <main>
-        <header>
-            <img src="assets/img/Logo_Primer_Letras.png" alt="">
-        </header>
         <section class="main_content">
             <div class="textMain">
                 <p class="subtitle">Desenvolver + Produzir + Comercializar</p>
@@ -23,9 +40,7 @@
                 </p>
                 <a href="">Fale Com a Gente</a>
             </div>
-            <div class="imgMain">
-                <img src="assets/img/Pote Primer.png" alt="">
-            </div>
+                <img class="bgMain" src="assets/img/Pote Primer.png" alt="">
         </section>
     </main>
 
@@ -74,19 +89,70 @@
         <div class="listWorks">
             <h2>Como Funciona?</h2>
             <ol>
-                <li><h2>1</h2>Escolha do Produto</li>
-                <li><h2>2</h2>Orçamento</li>
-                <li><h2>3</h2>Criação de Design</li>
-                <li><h2>4</h2>Aprovação na ANVISA</li>
-                <li><h2>5</h2>Produção e Envase</li>
-                <li><h2>6</h2>Embarque Seguro</li>
+                <li><h2>1</h2>
+                    <label for="workOne">Escolha do Produto</label>
+                </li>
+                <li><h2>2</h2>
+                    <label for="workTwo">Orçamento</label>
+                </li>
+                <li><h2>3</h2>
+                    <label for="workThree">Criação de Design</label>
+                </li>
+                <li><h2>4</h2>
+                    <label for="workFour">Aprovação na ANVISA</label>
+                </li>
+                <li><h2>5</h2>
+                    <label for="workFive">Produção e Envase</label>
+                </li>
+                <li><h2>6</h2>
+                    <label for="workSix">Embarque Seguro</label>
+                </li>
             </ol>
         </div>
+        <input type="radio" id="workOne" name="otavio" checked>
+        <input type="radio" id="workTwo" name="otavio">
+        <input type="radio" id="workThree" name="otavio">
+        <input type="radio" id="workFour" name="otavio">
+        <input type="radio" id="workFive" name="otavio">
+        <input type="radio" id="workSix" name="otavio">
+
         <div class="descWorks">
+            <h2>Escolha do Produto</h2>
             <img src="assets/img/suplementos_icon.png" alt="">
             <p>+ de 250 SKU's desenvolvidos e
                 criação de fórmulas exclusivas</p>
         </div>
+
+        <div class="descWorkTwo">
+            <h2>Orçamento</h2>
+            <img src="assets/img/orcamento_icon.png" alt="">
+            <p>Enviamos o orçamento detalhado para o inicio do projeto</p>
+        </div>
+
+        <div class="descWorkThree">
+            <h2>Criação de Design</h2>
+            <img src="assets/img/missao_icon.png" alt="">
+            <p>Temos parceiros para o desenvolvimento de embalagem e rótulos com designs exclusivoso</p>
+        </div>
+
+        <div class="descWorkFour">
+            <h2>Aprovação na ANVISA</h2>
+            <img src="assets/img/anvisa_icon.png" alt="">
+            <p>Fazemos o registro do seu produto na Vigilância Sanitária, para garantir uma venda segura.</p>
+        </div>
+
+        <div class="descWorkFive">
+            <h2>Produção e Envase Automatizado</h2>
+            <img src="assets/img/anvisa_icon.png" alt="">
+            <p>Alta tecnologia para garantir a melhor qualidade do mercado.</p>
+        </div>
+
+        <div class="descWorkSix">
+            <h2>Embarque Seguro</h2>
+            <img src="assets/img/embarque_icon.png" alt="">
+            <p>Preparamos seus produtos para o envio ao seu centro de distribuição.</p>
+        </div>
+
     </section>
 
     <section id="services">
@@ -96,28 +162,32 @@
                 <div class="card">
                     <img src="assets/img/full_icon.png" alt="">
                     <p>
-                        <span>FULL:</span>
-                        Consiste no auxílio na escolha dos produtos, desenvolvimento e aprovação de fórmulas, 
-                        criação da identidade visual (rótulos), registro e aprovações junto a ANVISA, produção e envase, 
-                        rotulagem e envio para seu centro de distribuição.
+                        <b><span>FULL:</span>
+                            Consiste no auxílio na escolha dos produtos, desenvolvimento e aprovação de fórmulas, 
+                            criação da identidade visual (rótulos), registro e aprovações junto a ANVISA, produção e envase, 
+                            rotulagem e envio para seu centro de distribuição.</b>
                     </p>
                 </div>
 
                 <div class="card">
                     <img src="assets/img/embarque_icon.png" alt="">
                     <p>
+                        <b>
                         <span>ENVASE:</span>
                         A sua empresa envia o produto a granel junto com os insumos (potes, tampas, rótulos, etc.) 
                         nós prestamos todo o serviço de envase e rotulagem e enviamos o produto final para o seu centro de distribuição.
+                        </b>
                     </p>
                 </div>
 
                 <div class="card">
                     <img src="assets/img/analise_icon.png" alt="">
                     <p>
+                        <b>
                         <span>Granel:</span>
                         Consiste no auxílio na escolha dos produtos, desenvolvimento e aprovação de fórmulas, registro e 
                         aprovações junto a ANVISA, produção, envase em barricas e envio para seu centro de distribuição.
+                        </b>
                     </p>
                 </div>
             </div>
@@ -125,7 +195,7 @@
     </section>
 
     <footer>
-        <div class="contactMe">
+        <div class="contactMe" id="contact">
             <div class="textContact">
                 <img src="assets/img/logo_primer.png" alt="">
                 <h2>SUA MARCA EM BOAS MÃOS!</h2>

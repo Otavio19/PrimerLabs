@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 body
@@ -16,16 +17,46 @@ body
 
 main
 {
-    height: 90vh;
+    height: 85vh;
+    max-height: 600px;
     background: rgb(126,217,87);
     background: linear-gradient(261deg, rgba(126,217,87,1) 19%, rgba(0,151,178,1) 75%);
     padding: 0 10%;
-    position: relative;
 }
 
-main header img
+header
+{
+    position: sticky;
+    top: 0;    
+    background: rgb(126,217,87);
+    background: linear-gradient(261deg, rgba(126,217,87,1) 19%, rgba(0,151,178,1) 75%);
+    padding: 0.2rem 10vw;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+header img
 {
     width: 10rem;
+}
+
+header ul
+{
+    display: flex;
+    list-style: none;
+}
+
+header ul li
+{
+    margin-left: 1rem;
+    line-height: 2.5rem;
+}
+
+header a
+{
+    color: #F7F7F7;
+    text-decoration: none;
 }
 
 .main_content
@@ -81,30 +112,26 @@ main header img
     color: #fff;
 }
 
-.imgMain
+.bgMain
 {
-    width: 30rem;
-    top: 10rem;
+    width: 30vw;
+    max-width: 500px;
     position: relative;
-}
-
-.imgMain img
-{
-    width: 100%;
 }
 
 
 #about
 {
-    height: 80vh;
     display: flex;
     align-items: center;
+    margin-top: 6vh;
 }
 
 .container
 {
-    height: 90%;
+    min-height: 80vh;
     width: 90%;
+    max-width: 1500px;
     margin: auto;
     background-color: #fff;
     display: flex;
@@ -171,12 +198,13 @@ main header img
 
 #works
 {
-    height: 60vh;
     width: 90%;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 5rem 0;
 }
 
 .listWorks
@@ -197,8 +225,12 @@ main header img
     line-height: 2.5rem;
     display: flex;
     cursor: default;
-    width: 60%;
     padding-left: 2rem;
+}
+
+.listWorks li label
+{
+    cursor: pointer;
 }
 
 .listWorks li:hover
@@ -215,7 +247,14 @@ main header img
     color: #000;
 }
 
-.descWorks
+#workOne:checked ~ .descWorks, #workTwo:checked ~ .descWorkTwo,
+#workThree:checked ~ .descWorkThree, #workFour:checked ~ .descWorkFour,
+#workFive:checked ~ .descWorkFive, #workSix:checked ~ .descWorkSix
+{
+    display: block;
+}
+
+.descWorks, .descWorkTwo, .descWorkThree, .descWorkFour, .descWorkFive, .descWorkSix 
 {
     width: 40%;
     text-align: center;
@@ -224,17 +263,25 @@ main header img
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    display: none;
+}
+
+#workOne, #workTwo, #workThree, #workFour, #workFive, #workSix
+{
+    display: none;
 }
 
 
-.descWorks img
+.descWorks img, .descWorkTwo img, .descWorkThree img, .descWorkFour img, .descWorkFive img, .descWorkSix img
 {
     width: 20%;
 }
 
 #services
 {
-    height: 70vh;
+    padding: 5rem 0;
+    max-width: 1200px;
+    margin: auto;
 }
 
 .containerServices
@@ -259,8 +306,7 @@ main header img
 
 .card
 {
-    width: 27%;
-    height: 15rem;
+    width: 30%;
     padding: 1rem 2rem;
     background-color: #DBDC30;
 }
@@ -270,18 +316,24 @@ main header img
     width: 7rem;
 }
 
+footer
+{
+    background-color: #2A2929;
+    height: 40vh;
+}
+
 .contactMe
 {
     background: rgb(126,217,87);
     background: linear-gradient(261deg, rgba(126,217,87,1) 19%, rgba(0,151,178,1) 75%);
-    width: 80%;
-    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: -7rem;
+    top: -4vh;
+    padding: 2rem 4rem;
+    width: 80%;
     margin: auto;
 }
 
@@ -315,12 +367,7 @@ main header img
     text-transform: uppercase;
     border-radius: 0.5rem;
     transition: 0.5s;
-}
-
-footer
-{
-    background-color: #2A2929;
-    height: 40vh;
+    text-align: center;
 }
 
 .footerInfo
@@ -329,6 +376,8 @@ footer
     justify-content: space-around;
     align-items: center;
     color: #fff;
+    background-color: #2A2929;
+    padding-bottom: 2rem;
 }
 
 .footerInfo h3

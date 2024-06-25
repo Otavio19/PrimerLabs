@@ -20,7 +20,7 @@ header {
     rgba(126, 217, 87, 1) 19%,
     rgba(0, 151, 178, 1) 75%
   );
-  z-index: 1;
+  z-index: 2;
 }
 
 .headerContent {
@@ -37,10 +37,10 @@ header img {
 header ul {
   display: flex;
   list-style: none;
+  gap: 2rem;
 }
 
 header ul li {
-  margin-left: 1rem;
   line-height: 2.5rem;
 }
 
@@ -168,12 +168,13 @@ main {
 
 .cardsAbout {
   display: flex;
-  justify-content: space-around;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .cardAbout {
   width: 25%;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #d8d8d8;
   text-align: center;
   padding: 1rem 1rem;
   display: flex;
@@ -202,6 +203,10 @@ main {
   align-items: center;
   justify-content: space-around;
   padding: 5rem 0;
+}
+
+.subTitle span {
+  color: red;
 }
 
 .listWorks {
@@ -367,7 +372,8 @@ footer {
 
 .footerInfo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 8rem;
   align-items: center;
   color: #fff;
   background-color: #2a2929;
@@ -390,11 +396,3 @@ footer {
 .footerInfo img {
   width: 20rem;
 }
-
-/* @media screen and (min-width: 1200px){
-    .main_content, header
-    {
-        width: 70%;
-        margin: auto;
-    }
-} */

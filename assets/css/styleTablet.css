@@ -1,0 +1,39 @@
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .headerContent {
+    width: 900px;
+  }
+
+  main {
+    height: 50vh;
+    display: flex;
+  }
+
+  .main_content {
+    width: 900px;
+  }
+
+  .bgMain {
+    width: 20rem;
+    top: 5rem;
+  }
+
+  .container {
+    width: 900px;
+  }
+
+  .descAbout {
+    width: 90%;
+  }
+
+  .cardsAbout {
+    width: 100%;
+  }
+
+  .cardAbout {
+    width: 260px;
+  }
+
+  #works {
+    width: 900px;
+  }
+}
